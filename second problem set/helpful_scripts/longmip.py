@@ -10,7 +10,7 @@ model = Model('longmip')
 x0 = model.addVar(name="x0") 
 
 # uncomment next line for linear relaxation (continuous variables)
-# x = model.addVars(oneton, name="x") 
+x = model.addVars(oneton, name="x") 
 
 # uncomment next line for binary variables
 x = model.addVars(oneton, name="x", vtype=GRB.BINARY)
